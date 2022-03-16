@@ -1,25 +1,20 @@
 import tkinter
+import os
+import sys
 
-window = tkinter.Tk()
+#============================================
+root = tkinter.Tk()
+root.geometry("700x700")
+root.resizable(False, False)
+root.title("Bulk upload")
+#============================================
 
-window.title("Tkinter Test")
-window.geometry("640x400+100+100")
-window.resizable(False, False)
 
-# 라벨1
-text = "Python Tkinter Test"
-width = 100
-height = 3
-fg = "black"
-relief = "ridge"
 
-label = tkinter.Label(window, 
-                      text=text,
-                      width=width,
-                      height=height,
-                      fg=fg,
-                      relief=relief
-                      )
-label.pack()
 
-window.mainloop()
+
+#============================================
+root.mainloop()
+
+if __name__=="__main__":
+    print(sys.path[0])
